@@ -19,10 +19,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A swift colour picker widget for swift 4 in iOS 11.0 and later.  It provides an
-@IBDesignable UIControl that can be placed on pages.  Two things to know:
-(1) valueChanged event is called whenever the colour is changed
-(2) colour : UIColor is the property containing the current colour
+A swift colour picker widget for swift 4 in iOS 11.0 and later.  It is an extended fork
+of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
                        DESC
 
   s.homepage         = 'https://github.com/jdstmporter/ColourWheel'
@@ -32,9 +30,11 @@ A swift colour picker widget for swift 4 in iOS 11.0 and later.  It provides an
   s.source           = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.platform = :ios
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'ColourWheel/Classes/**/*'
+  s.frameworks   = 'UIKit'
   
   # s.resource_bundles = {
   #   'ColourWheel' => ['ColourWheel/Assets/*.png']
