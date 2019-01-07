@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ColourWheel_Example' do
+  pod 'ColourWheel', :path => '../'
+
+  target 'ColourWheel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
