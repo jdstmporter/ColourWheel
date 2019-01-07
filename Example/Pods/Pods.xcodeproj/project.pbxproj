@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002BECFDA7AFD5C77A994FF0CAB5924D /* ColourWheel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DD5EA3DC903567A80D0031E5A9A8C9 /* ColourWheel-dummy.m */; };
+		440EF24D5A4C252A2542C2C44E97E08D /* Pods-ColourWheel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B17D84C7A938FA5782DC77F8AE9C9EA4 /* Pods-ColourWheel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5284EBD0386FAAF099662AF55B7DE9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		576C73E3EA6118E423B9056687EBB3F9 /* ColourWheel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7C339E764A2A95C60E45A4D895E891 /* ColourWheel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8EE96A817BEC2EA6032BBF29434013 /* Pods-ColourWheel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01993C9F012A742CE63A4C56BFFA60FB /* Pods-ColourWheel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A97A0ED28299A83BA89ED741B66E8B5 /* Pods-ColourWheel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91973864240E8FA13DF8DC379B9DDE5C /* Pods-ColourWheel_Example-dummy.m */; };
+		99C4E8E30D675B93BEED185559F99F79 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */; };
+		9B1995669C1C628220FD1E87A36E81EA /* Pods-ColourWheel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837326B3E402C256D92FBFF9092053E /* Pods-ColourWheel_Tests-dummy.m */; };
+		A1191034DF25D01FF6A097102B24055D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		A52314BA3AB59308ED6EE4B26FFB4FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		E182083821E3FFA300E17D8A /* brightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083221E3FFA200E17D8A /* brightnessSlider.swift */; };
+		E182083921E3FFA300E17D8A /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083321E3FFA200E17D8A /* control.swift */; };
+		E182083A21E3FFA300E17D8A /* colourWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083421E3FFA200E17D8A /* colourWheel.swift */; };
+		E182083B21E3FFA300E17D8A /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083521E3FFA300E17D8A /* cursor.swift */; };
+		E182083C21E3FFA300E17D8A /* pixels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083621E3FFA300E17D8A /* pixels.swift */; };
+		E182083D21E3FFA300E17D8A /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083721E3FFA300E17D8A /* geometry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98A4896F50839CEA82CDF8B0C769AA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4160C34ABC3C1E0DB45065D09BC1D21;
+			remoteInfo = ColourWheel;
+		};
+		D144149EC042AEC67D00C8FF92C6A2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE4003C0CA8EC11E69E9AE350BD96EC;
+			remoteInfo = "Pods-ColourWheel_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01993C9F012A742CE63A4C56BFFA60FB /* Pods-ColourWheel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColourWheel_Example-umbrella.h"; sourceTree = "<group>"; };
+		0C9BAAE6BF513D4FFD4EF7F59822DDA7 /* Pods-ColourWheel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColourWheel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		16481328A6F15E09757FA380F8B78740 /* Pods-ColourWheel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColourWheel_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2ED68AE52C1BF00A44B94219BA92F2F7 /* Pods-ColourWheel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColourWheel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		38F532699DF1E270CA754D58E08A4910 /* Pods-ColourWheel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColourWheel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A2A54A636FCD936F8105351A62B732C /* Pods-ColourWheel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourWheel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B7C339E764A2A95C60E45A4D895E891 /* ColourWheel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColourWheel-umbrella.h"; sourceTree = "<group>"; };
+		418846791740AD96DE9630D648E65C53 /* Pods-ColourWheel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColourWheel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		419730840399B015DABD15769BF82A5F /* Pods-ColourWheel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ColourWheel_Tests.modulemap"; sourceTree = "<group>"; };
+		5617F25B3EBE524782F18FD9FEB56139 /* Pods-ColourWheel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColourWheel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		56AA90AC1BDAC4D8A1FE19BEA68E1E68 /* ColourWheel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ColourWheel.modulemap; sourceTree = "<group>"; };
+		58DD5EA3DC903567A80D0031E5A9A8C9 /* ColourWheel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ColourWheel-dummy.m"; sourceTree = "<group>"; };
+		5C708940D953F135848103723B2868D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C845D02177438FD932E2F61B6CB3B90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE25AF393C1948A006C2ADBCF02C282 /* Pods_ColourWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F12502EE81388292EC89A023DEF05D9 /* ColourWheel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ColourWheel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		64F2A5C0EE254B0306040AE64991164C /* Pods-ColourWheel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ColourWheel_Example.modulemap"; sourceTree = "<group>"; };
+		7837326B3E402C256D92FBFF9092053E /* Pods-ColourWheel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColourWheel_Tests-dummy.m"; sourceTree = "<group>"; };
+		8E9BC9DED98ED18FBE7A5748EFBFF424 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		91973864240E8FA13DF8DC379B9DDE5C /* Pods-ColourWheel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColourWheel_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABF486D1737131FE3BDD27677209D75A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE04E22875E6DFC82A053C234CF983F8 /* Pods-ColourWheel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColourWheel_Tests-resources.sh"; sourceTree = "<group>"; };
+		B17D84C7A938FA5782DC77F8AE9C9EA4 /* Pods-ColourWheel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColourWheel_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BD149CE9279FA46D1FDE68B5EFE2AD11 /* Pods-ColourWheel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColourWheel_Example-resources.sh"; sourceTree = "<group>"; };
+		BE7BDC8C37A6D709C897309A52BC1632 /* Pods-ColourWheel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourWheel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7BE6A42A5A3A3EC7221EAA652264D8F /* Pods-ColourWheel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourWheel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D9E4062A1F3BDD3C119B01E7C91B6DC8 /* ColourWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColourWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA961DFAEF6F0C85E6CBD524BEB831A6 /* Pods_ColourWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFFCC98E5AB104427D0B76BBAD98066 /* ColourWheel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColourWheel.xcconfig; sourceTree = "<group>"; };
+		E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ColourWheel/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		E182083221E3FFA200E17D8A /* brightnessSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = brightnessSlider.swift; sourceTree = "<group>"; };
+		E182083321E3FFA200E17D8A /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
+		E182083421E3FFA200E17D8A /* colourWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colourWheel.swift; sourceTree = "<group>"; };
+		E182083521E3FFA300E17D8A /* cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cursor.swift; sourceTree = "<group>"; };
+		E182083621E3FFA300E17D8A /* pixels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pixels.swift; sourceTree = "<group>"; };
+		E182083721E3FFA300E17D8A /* geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometry.swift; sourceTree = "<group>"; };
+		E71AF825F01D54D79CB99C374CCA31E6 /* Pods-ColourWheel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourWheel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F77DB806177542BFF2BCB8334A97DA10 /* ColourWheel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColourWheel-prefix.pch"; sourceTree = "<group>"; };
+		FFCBB1A22212E129DC2A37610EB9041D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3422E15586189D19C25E7BC51CC87D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52314BA3AB59308ED6EE4B26FFB4FA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552E5B234BE49E9A8AC27A777C3978E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1191034DF25D01FF6A097102B24055D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8187C22C693751A02D74108DFB9A58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5284EBD0386FAAF099662AF55B7DE9B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065F038B5B67C61375863092BDCDE6E4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66D9111E6C6612DCF2DE03C6FCC7AD6F /* Pods-ColourWheel_Example */,
+				55D2FFE699EF68D2693F4DE78C284EF0 /* Pods-ColourWheel_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0AAA4405E97F2AFAC2A9EF9411F7198C /* ColourWheel */ = {
+			isa = PBXGroup;
+			children = (
+				E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */,
+				2A2B38910344CA39BC2DC31AC7129840 /* Pod */,
+				9967703225ECC2417DB40A73BFA71E92 /* Support Files */,
+			);
+			name = ColourWheel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A2B38910344CA39BC2DC31AC7129840 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E182083221E3FFA200E17D8A /* brightnessSlider.swift */,
+				E182083421E3FFA200E17D8A /* colourWheel.swift */,
+				E182083321E3FFA200E17D8A /* control.swift */,
+				E182083521E3FFA300E17D8A /* cursor.swift */,
+				E182083721E3FFA300E17D8A /* geometry.swift */,
+				E182083621E3FFA300E17D8A /* pixels.swift */,
+				5F12502EE81388292EC89A023DEF05D9 /* ColourWheel.podspec */,
+				FFCBB1A22212E129DC2A37610EB9041D /* LICENSE */,
+				8E9BC9DED98ED18FBE7A5748EFBFF424 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		55D2FFE699EF68D2693F4DE78C284EF0 /* Pods-ColourWheel_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C708940D953F135848103723B2868D0 /* Info.plist */,
+				419730840399B015DABD15769BF82A5F /* Pods-ColourWheel_Tests.modulemap */,
+				38F532699DF1E270CA754D58E08A4910 /* Pods-ColourWheel_Tests-acknowledgements.markdown */,
+				5617F25B3EBE524782F18FD9FEB56139 /* Pods-ColourWheel_Tests-acknowledgements.plist */,
+				7837326B3E402C256D92FBFF9092053E /* Pods-ColourWheel_Tests-dummy.m */,
+				16481328A6F15E09757FA380F8B78740 /* Pods-ColourWheel_Tests-frameworks.sh */,
+				AE04E22875E6DFC82A053C234CF983F8 /* Pods-ColourWheel_Tests-resources.sh */,
+				B17D84C7A938FA5782DC77F8AE9C9EA4 /* Pods-ColourWheel_Tests-umbrella.h */,
+				3A2A54A636FCD936F8105351A62B732C /* Pods-ColourWheel_Tests.debug.xcconfig */,
+				D7BE6A42A5A3A3EC7221EAA652264D8F /* Pods-ColourWheel_Tests.release.xcconfig */,
+			);
+			name = "Pods-ColourWheel_Tests";
+			path = "Target Support Files/Pods-ColourWheel_Tests";
+			sourceTree = "<group>";
+		};
+		66D9111E6C6612DCF2DE03C6FCC7AD6F /* Pods-ColourWheel_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5C845D02177438FD932E2F61B6CB3B90 /* Info.plist */,
+				64F2A5C0EE254B0306040AE64991164C /* Pods-ColourWheel_Example.modulemap */,
+				418846791740AD96DE9630D648E65C53 /* Pods-ColourWheel_Example-acknowledgements.markdown */,
+				0C9BAAE6BF513D4FFD4EF7F59822DDA7 /* Pods-ColourWheel_Example-acknowledgements.plist */,
+				91973864240E8FA13DF8DC379B9DDE5C /* Pods-ColourWheel_Example-dummy.m */,
+				2ED68AE52C1BF00A44B94219BA92F2F7 /* Pods-ColourWheel_Example-frameworks.sh */,
+				BD149CE9279FA46D1FDE68B5EFE2AD11 /* Pods-ColourWheel_Example-resources.sh */,
+				01993C9F012A742CE63A4C56BFFA60FB /* Pods-ColourWheel_Example-umbrella.h */,
+				BE7BDC8C37A6D709C897309A52BC1632 /* Pods-ColourWheel_Example.debug.xcconfig */,
+				E71AF825F01D54D79CB99C374CCA31E6 /* Pods-ColourWheel_Example.release.xcconfig */,
+			);
+			name = "Pods-ColourWheel_Example";
+			path = "Target Support Files/Pods-ColourWheel_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				88F4BA588E6A433B6F352722EEBA521B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E10E8B334000B39C8C23F392386ACA1F /* Products */,
+				065F038B5B67C61375863092BDCDE6E4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88F4BA588E6A433B6F352722EEBA521B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA4405E97F2AFAC2A9EF9411F7198C /* ColourWheel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9967703225ECC2417DB40A73BFA71E92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56AA90AC1BDAC4D8A1FE19BEA68E1E68 /* ColourWheel.modulemap */,
+				DCFFCC98E5AB104427D0B76BBAD98066 /* ColourWheel.xcconfig */,
+				58DD5EA3DC903567A80D0031E5A9A8C9 /* ColourWheel-dummy.m */,
+				F77DB806177542BFF2BCB8334A97DA10 /* ColourWheel-prefix.pch */,
+				3B7C339E764A2A95C60E45A4D895E891 /* ColourWheel-umbrella.h */,
+				ABF486D1737131FE3BDD27677209D75A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ColourWheel";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10E8B334000B39C8C23F392386ACA1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9E4062A1F3BDD3C119B01E7C91B6DC8 /* ColourWheel.framework */,
+				DA961DFAEF6F0C85E6CBD524BEB831A6 /* Pods_ColourWheel_Example.framework */,
+				5CE25AF393C1948A006C2ADBCF02C282 /* Pods_ColourWheel_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		467F2F9B7C27A1D2766E3B607C146C9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8EE96A817BEC2EA6032BBF29434013 /* Pods-ColourWheel_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A74259E79D4B94A3DDCCD8B58F9BB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C73E3EA6118E423B9056687EBB3F9 /* ColourWheel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D930C5973F3448600740E96A6CAE69CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440EF24D5A4C252A2542C2C44E97E08D /* Pods-ColourWheel_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3AC3181F55934895BEEC436487A756EB /* Pods-ColourWheel_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08AD981196CA2FF57362321A0009395 /* Build configuration list for PBXNativeTarget "Pods-ColourWheel_Tests" */;
+			buildPhases = (
+				D930C5973F3448600740E96A6CAE69CC /* Headers */,
+				D823460EF58C9AF41C9447EBF8B3DEC5 /* Sources */,
+				3422E15586189D19C25E7BC51CC87D4A /* Frameworks */,
+				11BC8AAE075CA5EC0E3E7453FC4CE330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD9AB748A824185A11580E084179736 /* PBXTargetDependency */,
+			);
+			name = "Pods-ColourWheel_Tests";
+			productName = "Pods-ColourWheel_Tests";
+			productReference = 5CE25AF393C1948A006C2ADBCF02C282 /* Pods_ColourWheel_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFE4003C0CA8EC11E69E9AE350BD96EC /* Pods-ColourWheel_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998C10CD2BAEB3617769BBED4FEC1398 /* Build configuration list for PBXNativeTarget "Pods-ColourWheel_Example" */;
+			buildPhases = (
+				467F2F9B7C27A1D2766E3B607C146C9D /* Headers */,
+				7ADFA81597E004E96ACE94D1DF819F83 /* Sources */,
+				552E5B234BE49E9A8AC27A777C3978E1 /* Frameworks */,
+				A9FCC918C9997DEB4C1DD53D7AA06B78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B662DFED008EA73D578C09FAE5C57D /* PBXTargetDependency */,
+			);
+			name = "Pods-ColourWheel_Example";
+			productName = "Pods-ColourWheel_Example";
+			productReference = DA961DFAEF6F0C85E6CBD524BEB831A6 /* Pods_ColourWheel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4160C34ABC3C1E0DB45065D09BC1D21 /* ColourWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3FA975F485290BF463631D62B992869 /* Build configuration list for PBXNativeTarget "ColourWheel" */;
+			buildPhases = (
+				D7A74259E79D4B94A3DDCCD8B58F9BB5 /* Headers */,
+				93DF70BEE4EF6CE273F6F7119C1B3399 /* Sources */,
+				B8187C22C693751A02D74108DFB9A58A /* Frameworks */,
+				FD7B730F8F91D6587FB59D3FDFB18E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColourWheel;
+			productName = ColourWheel;
+			productReference = D9E4062A1F3BDD3C119B01E7C91B6DC8 /* ColourWheel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E10E8B334000B39C8C23F392386ACA1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4160C34ABC3C1E0DB45065D09BC1D21 /* ColourWheel */,
+				DFE4003C0CA8EC11E69E9AE350BD96EC /* Pods-ColourWheel_Example */,
+				3AC3181F55934895BEEC436487A756EB /* Pods-ColourWheel_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BC8AAE075CA5EC0E3E7453FC4CE330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FCC918C9997DEB4C1DD53D7AA06B78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7B730F8F91D6587FB59D3FDFB18E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ADFA81597E004E96ACE94D1DF819F83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A97A0ED28299A83BA89ED741B66E8B5 /* Pods-ColourWheel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DF70BEE4EF6CE273F6F7119C1B3399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182083821E3FFA300E17D8A /* brightnessSlider.swift in Sources */,
+				E182083921E3FFA300E17D8A /* control.swift in Sources */,
+				E182083A21E3FFA300E17D8A /* colourWheel.swift in Sources */,
+				E182083B21E3FFA300E17D8A /* cursor.swift in Sources */,
+				002BECFDA7AFD5C77A994FF0CAB5924D /* ColourWheel-dummy.m in Sources */,
+				E182083D21E3FFA300E17D8A /* geometry.swift in Sources */,
+				99C4E8E30D675B93BEED185559F99F79 /* ReplaceMe.swift in Sources */,
+				E182083C21E3FFA300E17D8A /* pixels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D823460EF58C9AF41C9447EBF8B3DEC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1995669C1C628220FD1E87A36E81EA /* Pods-ColourWheel_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FD9AB748A824185A11580E084179736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColourWheel_Example";
+			target = DFE4003C0CA8EC11E69E9AE350BD96EC /* Pods-ColourWheel_Example */;
+			targetProxy = D144149EC042AEC67D00C8FF92C6A2CE /* PBXContainerItemProxy */;
+		};
+		D6B662DFED008EA73D578C09FAE5C57D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ColourWheel;
+			target = F4160C34ABC3C1E0DB45065D09BC1D21 /* ColourWheel */;
+			targetProxy = 98A4896F50839CEA82CDF8B0C769AA8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D4A574A0357BF30BA5F4945C7B0DB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFFCC98E5AB104427D0B76BBAD98066 /* ColourWheel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ColourWheel/ColourWheel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ColourWheel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ColourWheel/ColourWheel.modulemap";
+				PRODUCT_MODULE_NAME = ColourWheel;
+				PRODUCT_NAME = ColourWheel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5FD5125D8FA89655E365F7FAF73798B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7BDC8C37A6D709C897309A52BC1632 /* Pods-ColourWheel_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ColourWheel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ColourWheel_Example/Pods-ColourWheel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		748D333918CC714D64C82237D40B310E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71AF825F01D54D79CB99C374CCA31E6 /* Pods-ColourWheel_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ColourWheel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ColourWheel_Example/Pods-ColourWheel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		967A10C2A53FD03E4F0B9531AF3A6626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BE6A42A5A3A3EC7221EAA652264D8F /* Pods-ColourWheel_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ColourWheel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ColourWheel_Tests/Pods-ColourWheel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A748014F0C140ACF4664FFB8E0C61342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A2A54A636FCD936F8105351A62B732C /* Pods-ColourWheel_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ColourWheel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ColourWheel_Tests/Pods-ColourWheel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA69673E558E1328A0454B9DB0F1B38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFFCC98E5AB104427D0B76BBAD98066 /* ColourWheel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ColourWheel/ColourWheel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ColourWheel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ColourWheel/ColourWheel.modulemap";
+				PRODUCT_MODULE_NAME = ColourWheel;
+				PRODUCT_NAME = ColourWheel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
+				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998C10CD2BAEB3617769BBED4FEC1398 /* Build configuration list for PBXNativeTarget "Pods-ColourWheel_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD5125D8FA89655E365F7FAF73798B3 /* Debug */,
+				748D333918CC714D64C82237D40B310E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08AD981196CA2FF57362321A0009395 /* Build configuration list for PBXNativeTarget "Pods-ColourWheel_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A748014F0C140ACF4664FFB8E0C61342 /* Debug */,
+				967A10C2A53FD03E4F0B9531AF3A6626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3FA975F485290BF463631D62B992869 /* Build configuration list for PBXNativeTarget "ColourWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4A574A0357BF30BA5F4945C7B0DB84 /* Debug */,
+				DA69673E558E1328A0454B9DB0F1B38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
