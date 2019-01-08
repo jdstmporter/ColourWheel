@@ -7,20 +7,23 @@
 
 ## API
 
-ColourWheel defines a simple UIKit control that provides interactive colour-picker capability.  It is designable, so it works naturally with XCode's Interface Designer.  It is implemented as a single class: `ColourWheelControl`, which inherits from `UIControl` and so exhibits all the usual configuration variables.
+ColourWheel defines a simple UIKit control that provides interactive colour-picker capability.  It is designable, so it works naturally with XCode's Interface Designer.  
+It is implemented as a single class: `ColourWheelControl`, which inherits from `UIControl` and so exhibits all the usual configuration properties (e.g. background colour, border, `UIEvent`, etc).
 
-Specific aspects of the API that are of importance:
+Specific aspects of the API for `ColourWheelControl` that are of importance are as follows:
 
-* The read-only property  `var colour : UIColor { get }` gives the currently selected colour
-* The event `UIEvent.valueChanged` is invoked whenever the selected colour changes; it can be connected to via Interface Builder
+*  Reading  `var colour : UIColor` gives the currently selected colour, writing to it resets the control to point at the specified colour; this property is exposed to Interface Builder
+*  The control fires the event  `UIEvent.valueChanged` whenever the selected colour changes; events are managed in the usual manner for `UIControl` instances
 
-Apart from that, it manages itself.
+Everything else, including layout, is managed by the control.
 
 
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+![A Screenshot](./ColourWheel-small-screenshot.png "Example Screenshot")
 
 ## Requirements
 
@@ -39,15 +42,15 @@ jdstmporter, julian@porternet.org.uk.
 
 ## Acknowledgements
 
-This is essentially an extended fork of the Objective-C version  by [JustinMeiners](https://github.com/justinmeiners/ios-color-wheel).  New features include:
+This is essentially an extended fork of the Objective-C control written  by [JustinMeiners](https://github.com/justinmeiners/ios-color-wheel).  New features include:
 
-* Port and modrnisation for Swift 4.2 on iOS 11.0 and later
-* A custom brightness picker slider, of similar style to the colour wheel
-* Improved 'cursor' objects to show th mouse location on controls
-* A portmanteau UIControl which provides the colour wheel / brightness slider / colour well as a single @IBDesignable view that can be dropped onto a view in Interface Builder
+* Port to Swift and modrnisation for Swift 4.2 on iOS 11.0 and later
+* Addition of custom brightness picker slider, of similar style to the colour wheel, in place of the original `UISlider`
+* Improved 'cursor' objects to show the mouse location on the pickers
+* `ColourWheelControl` provides the colour wheel, brightness slider and colour well as a single `@IBDesignable` control that can be dropped onto a view in Interface Builder and left to manage itself
 
 
 
 ## License
 
-ColourWheel is available under the MIT license. See the LICENSE file for more info.
+ColourWheel is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.

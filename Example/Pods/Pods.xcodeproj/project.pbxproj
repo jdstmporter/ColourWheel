@@ -13,7 +13,6 @@
 		576C73E3EA6118E423B9056687EBB3F9 /* ColourWheel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7C339E764A2A95C60E45A4D895E891 /* ColourWheel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B8EE96A817BEC2EA6032BBF29434013 /* Pods-ColourWheel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01993C9F012A742CE63A4C56BFFA60FB /* Pods-ColourWheel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A97A0ED28299A83BA89ED741B66E8B5 /* Pods-ColourWheel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91973864240E8FA13DF8DC379B9DDE5C /* Pods-ColourWheel_Example-dummy.m */; };
-		99C4E8E30D675B93BEED185559F99F79 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */; };
 		9B1995669C1C628220FD1E87A36E81EA /* Pods-ColourWheel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837326B3E402C256D92FBFF9092053E /* Pods-ColourWheel_Tests-dummy.m */; };
 		A1191034DF25D01FF6A097102B24055D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		A52314BA3AB59308ED6EE4B26FFB4FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -23,6 +22,8 @@
 		E182083B21E3FFA300E17D8A /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083521E3FFA300E17D8A /* cursor.swift */; };
 		E182083C21E3FFA300E17D8A /* pixels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083621E3FFA300E17D8A /* pixels.swift */; };
 		E182083D21E3FFA300E17D8A /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182083721E3FFA300E17D8A /* geometry.swift */; };
+		E182084721E5262500E17D8A /* ColourWheel-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E182084621E5262500E17D8A /* ColourWheel-screenshot.png */; };
+		E182084921E52A7700E17D8A /* ColourWheel-small-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E182084821E52A7700E17D8A /* ColourWheel-small-screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,13 +75,14 @@
 		D9E4062A1F3BDD3C119B01E7C91B6DC8 /* ColourWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColourWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA961DFAEF6F0C85E6CBD524BEB831A6 /* Pods_ColourWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFCC98E5AB104427D0B76BBAD98066 /* ColourWheel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColourWheel.xcconfig; sourceTree = "<group>"; };
-		E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ColourWheel/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E182083221E3FFA200E17D8A /* brightnessSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = brightnessSlider.swift; sourceTree = "<group>"; };
 		E182083321E3FFA200E17D8A /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
 		E182083421E3FFA200E17D8A /* colourWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colourWheel.swift; sourceTree = "<group>"; };
 		E182083521E3FFA300E17D8A /* cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cursor.swift; sourceTree = "<group>"; };
 		E182083621E3FFA300E17D8A /* pixels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pixels.swift; sourceTree = "<group>"; };
 		E182083721E3FFA300E17D8A /* geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometry.swift; sourceTree = "<group>"; };
+		E182084621E5262500E17D8A /* ColourWheel-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColourWheel-screenshot.png"; sourceTree = "<group>"; };
+		E182084821E52A7700E17D8A /* ColourWheel-small-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColourWheel-small-screenshot.png"; sourceTree = "<group>"; };
 		E71AF825F01D54D79CB99C374CCA31E6 /* Pods-ColourWheel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourWheel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F77DB806177542BFF2BCB8334A97DA10 /* ColourWheel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColourWheel-prefix.pch"; sourceTree = "<group>"; };
 		FFCBB1A22212E129DC2A37610EB9041D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -126,7 +128,6 @@
 		0AAA4405E97F2AFAC2A9EF9411F7198C /* ColourWheel */ = {
 			isa = PBXGroup;
 			children = (
-				E033DA65ED2A1F2ACCA191492F504452 /* ReplaceMe.swift */,
 				2A2B38910344CA39BC2DC31AC7129840 /* Pod */,
 				9967703225ECC2417DB40A73BFA71E92 /* Support Files */,
 			);
@@ -137,6 +138,8 @@
 		2A2B38910344CA39BC2DC31AC7129840 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				E182084821E52A7700E17D8A /* ColourWheel-small-screenshot.png */,
+				E182084621E5262500E17D8A /* ColourWheel-screenshot.png */,
 				E182083221E3FFA200E17D8A /* brightnessSlider.swift */,
 				E182083421E3FFA200E17D8A /* colourWheel.swift */,
 				E182083321E3FFA200E17D8A /* control.swift */,
@@ -383,6 +386,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182084921E52A7700E17D8A /* ColourWheel-small-screenshot.png in Resources */,
+				E182084721E5262500E17D8A /* ColourWheel-screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +412,6 @@
 				E182083B21E3FFA300E17D8A /* cursor.swift in Sources */,
 				002BECFDA7AFD5C77A994FF0CAB5924D /* ColourWheel-dummy.m in Sources */,
 				E182083D21E3FFA300E17D8A /* geometry.swift in Sources */,
-				99C4E8E30D675B93BEED185559F99F79 /* ReplaceMe.swift in Sources */,
 				E182083C21E3FFA300E17D8A /* pixels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -82,8 +82,14 @@ public class ColourWheelControl : UIControl {
         sendActions(for: .valueChanged)
     }
     
-    public var colour : UIColor { return brightnessSlider.currentColor }
-    
+    @IBInspectable public var colour : UIColor {
+        get { return brightnessSlider.currentColor }
+        set {
+            brightnessSlider.setBaseColor(newValue)
+            colorWheel.currentColor=newValue
+            setNeedsDisplay()
+        }
+    }
     
     
 }
