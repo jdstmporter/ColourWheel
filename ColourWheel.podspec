@@ -23,7 +23,7 @@ A swift colour picker widget for swift 4 in iOS 11.0 and later.  It is an extend
 of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
                        DESC
 
-  s.homepage         = 'https://github.com/jdstmporter/ColourWheel'
+  s.homepage         = 'https://github.com/jdstmporter/ColourWheel.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jdstmporter' => 'julian@porternet.org.uk' }
@@ -33,7 +33,8 @@ of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
   s.platform = :ios
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'ColourWheel/Classes/**/*'
+  s.source = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => '#{s.version}' }
+  s.source_files = 'ColourWheelFramework/src/*.{swift}'
   s.frameworks   = 'UIKit'
   
   # s.resource_bundles = {
@@ -44,3 +45,5 @@ of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+
