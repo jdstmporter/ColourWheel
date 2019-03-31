@@ -13,11 +13,20 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		E1A1435422514EBA00CB2404 /* ColourWheelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A1435222514EBA00CB2404 /* ColourWheelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A1436722514F0B00CB2404 /* ColourWheel-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A1436522514F0B00CB2404 /* ColourWheel-screenshot.png */; };
+		E1A1436822514F0B00CB2404 /* ColourWheel-small-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A1436622514F0B00CB2404 /* ColourWheel-small-screenshot.png */; };
+		E1A1436A22514F5300CB2404 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1A1436922514F5300CB2404 /* Podfile */; };
+		E1A1436C22514F7A00CB2404 /* brightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1436B22514F7A00CB2404 /* brightnessSlider.swift */; };
+		E1A1436F22514FAE00CB2404 /* colourWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1436E22514FAE00CB2404 /* colourWheel.swift */; };
+		E1A1437122514FBC00CB2404 /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437022514FBC00CB2404 /* control.swift */; };
+		E1A1437322514FC900CB2404 /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437222514FC900CB2404 /* cursor.swift */; };
+		E1A1437522514FD100CB2404 /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437422514FD100CB2404 /* geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10C44F339D448200E7ADBE4F /* Pods-ColourWheel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourWheel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColourWheel_Example/Pods-ColourWheel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		21DB4F90100E878DA6590D63 /* ColourWheel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColourWheel.podspec; path = ../ColourWheel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		21DB4F90100E878DA6590D63 /* ColourWheel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ColourWheel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3D65C686E6450898508898DE /* Pods-ColourWheel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourWheel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColourWheel_Example/Pods-ColourWheel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5C470922B44CE2BC2A256C8A /* Pods-ColourWheel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourWheel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColourWheel_Tests/Pods-ColourWheel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ColourWheel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourWheel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,12 +36,21 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A2FED92578A014FBD1A586EB /* Pods-ColourWheel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourWheel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColourWheel_Tests/Pods-ColourWheel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A6FF7F4C3689E098B6F2B2E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A6FF7F4C3689E098B6F2B2E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B290705361D5FA26C813E73A /* Pods_ColourWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2845277ACC82D724019352D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E1A1435022514EBA00CB2404 /* ColourWheelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColourWheelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A1435222514EBA00CB2404 /* ColourWheelFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColourWheelFramework.h; sourceTree = "<group>"; };
+		E1A1435322514EBA00CB2404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A1436522514F0B00CB2404 /* ColourWheel-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColourWheel-screenshot.png"; sourceTree = "<group>"; };
+		E1A1436622514F0B00CB2404 /* ColourWheel-small-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColourWheel-small-screenshot.png"; sourceTree = "<group>"; };
+		E1A1436922514F5300CB2404 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		E1A1436B22514F7A00CB2404 /* brightnessSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = brightnessSlider.swift; sourceTree = "<group>"; };
+		E1A1436E22514FAE00CB2404 /* colourWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colourWheel.swift; sourceTree = "<group>"; };
+		E1A1437022514FBC00CB2404 /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
+		E1A1437222514FC900CB2404 /* cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cursor.swift; sourceTree = "<group>"; };
+		E1A1437422514FD100CB2404 /* geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometry.swift; sourceTree = "<group>"; };
+		E2845277ACC82D724019352D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFA94B4910F95D7B4E6D6686 /* Pods_ColourWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,6 +60,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EF2002F2A688680627555 /* Pods_ColourWheel_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A1434D22514EBA00CB2404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +85,11 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				E2845277ACC82D724019352D /* README.md */,
+				A6FF7F4C3689E098B6F2B2E6 /* LICENSE */,
+				21DB4F90100E878DA6590D63 /* ColourWheel.podspec */,
 				607FACD21AFB9204008FA782 /* Example for ColourWheel */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				E1A1435122514EBA00CB2404 /* ColourWheelFramework */,
 				607FACD11AFB9204008FA782 /* Products */,
 				955985172BA1A91553275238 /* Pods */,
 				0F6874114402D08190F30FBD /* Frameworks */,
@@ -73,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* ColourWheel_Example.app */,
+				E1A1435022514EBA00CB2404 /* ColourWheelFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +108,7 @@
 		607FACD21AFB9204008FA782 /* Example for ColourWheel */ = {
 			isa = PBXGroup;
 			children = (
+				E1A1436922514F5300CB2404 /* Podfile */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -99,33 +128,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				21DB4F90100E878DA6590D63 /* ColourWheel.podspec */,
-				E2845277ACC82D724019352D /* README.md */,
-				A6FF7F4C3689E098B6F2B2E6 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
 		955985172BA1A91553275238 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +139,50 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E1A1435122514EBA00CB2404 /* ColourWheelFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1436D22514F8400CB2404 /* src */,
+				E1A1436422514EF300CB2404 /* Extras */,
+				E1A1435222514EBA00CB2404 /* ColourWheelFramework.h */,
+				E1A1435322514EBA00CB2404 /* Info.plist */,
+			);
+			path = ColourWheelFramework;
+			sourceTree = "<group>";
+		};
+		E1A1436422514EF300CB2404 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1436622514F0B00CB2404 /* ColourWheel-small-screenshot.png */,
+				E1A1436522514F0B00CB2404 /* ColourWheel-screenshot.png */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		E1A1436D22514F8400CB2404 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1437422514FD100CB2404 /* geometry.swift */,
+				E1A1437222514FC900CB2404 /* cursor.swift */,
+				E1A1437022514FBC00CB2404 /* control.swift */,
+				E1A1436E22514FAE00CB2404 /* colourWheel.swift */,
+				E1A1436B22514F7A00CB2404 /* brightnessSlider.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E1A1434B22514EBA00CB2404 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A1435422514EBA00CB2404 /* ColourWheelFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		607FACCF1AFB9204008FA782 /* ColourWheel_Example */ = {
@@ -159,6 +204,24 @@
 			productReference = 607FACD01AFB9204008FA782 /* ColourWheel_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E1A1434F22514EBA00CB2404 /* ColourWheelFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A1435722514EBA00CB2404 /* Build configuration list for PBXNativeTarget "ColourWheelFramework" */;
+			buildPhases = (
+				E1A1434B22514EBA00CB2404 /* Headers */,
+				E1A1434C22514EBA00CB2404 /* Sources */,
+				E1A1434D22514EBA00CB2404 /* Frameworks */,
+				E1A1434E22514EBA00CB2404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColourWheelFramework;
+			productName = ColourWheelFramework;
+			productReference = E1A1435022514EBA00CB2404 /* ColourWheelFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +237,11 @@
 						DevelopmentTeam = XLKATCU397;
 						LastSwiftMigration = 1010;
 					};
+					E1A1434F22514EBA00CB2404 = {
+						CreatedOnToolsVersion = 10.2;
+						DevelopmentTeam = XLKATCU397;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ColourWheel" */;
@@ -181,6 +249,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -190,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* ColourWheel_Example */,
+				E1A1434F22514EBA00CB2404 /* ColourWheelFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -201,7 +271,17 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				E1A1436A22514F5300CB2404 /* Podfile in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A1434E22514EBA00CB2404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A1436822514F0B00CB2404 /* ColourWheel-small-screenshot.png in Resources */,
+				E1A1436722514F0B00CB2404 /* ColourWheel-screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +341,18 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A1434C22514EBA00CB2404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A1437322514FC900CB2404 /* cursor.swift in Sources */,
+				E1A1436C22514F7A00CB2404 /* brightnessSlider.swift in Sources */,
+				E1A1437522514FD100CB2404 /* geometry.swift in Sources */,
+				E1A1436F22514FAE00CB2404 /* colourWheel.swift in Sources */,
+				E1A1437122514FBC00CB2404 /* control.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +511,75 @@
 			};
 			name = Release;
 		};
+		E1A1435522514EBA00CB2404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XLKATCU397;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ColourWheelFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroralighting.ColourWheelFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1A1435622514EBA00CB2404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XLKATCU397;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ColourWheelFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroralighting.ColourWheelFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,6 +597,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A1435722514EBA00CB2404 /* Build configuration list for PBXNativeTarget "ColourWheelFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A1435522514EBA00CB2404 /* Debug */,
+				E1A1435622514EBA00CB2404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
