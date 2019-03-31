@@ -27,13 +27,12 @@ of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jdstmporter' => 'julian@porternet.org.uk' }
-  s.source           = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios
   s.ios.deployment_target = '11.0'
 
-  s.source = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => '#{s.version}' }
+  s.source = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => "#{s.version}" }
   s.source_files = 'ColourWheelFramework/src/*.{swift}'
   s.frameworks   = 'UIKit'
   

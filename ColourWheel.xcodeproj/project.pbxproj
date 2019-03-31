@@ -22,6 +22,7 @@
 		E1A1437122514FBC00CB2404 /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437022514FBC00CB2404 /* control.swift */; };
 		E1A1437322514FC900CB2404 /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437222514FC900CB2404 /* cursor.swift */; };
 		E1A1437522514FD100CB2404 /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437422514FD100CB2404 /* geometry.swift */; };
+		E1A143792251560700CB2404 /* pixels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A143782251560100CB2404 /* pixels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E1A1437022514FBC00CB2404 /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
 		E1A1437222514FC900CB2404 /* cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cursor.swift; sourceTree = "<group>"; };
 		E1A1437422514FD100CB2404 /* geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometry.swift; sourceTree = "<group>"; };
+		E1A143782251560100CB2404 /* pixels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pixels.swift; sourceTree = "<group>"; };
 		E2845277ACC82D724019352D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFA94B4910F95D7B4E6D6686 /* Pods_ColourWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 		E1A1436D22514F8400CB2404 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E1A143782251560100CB2404 /* pixels.swift */,
 				E1A1437422514FD100CB2404 /* geometry.swift */,
 				E1A1437222514FC900CB2404 /* cursor.swift */,
 				E1A1437022514FBC00CB2404 /* control.swift */,
@@ -352,6 +355,7 @@
 				E1A1436C22514F7A00CB2404 /* brightnessSlider.swift in Sources */,
 				E1A1437522514FD100CB2404 /* geometry.swift in Sources */,
 				E1A1436F22514FAE00CB2404 /* colourWheel.swift in Sources */,
+				E1A143792251560700CB2404 /* pixels.swift in Sources */,
 				E1A1437122514FBC00CB2404 /* control.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
