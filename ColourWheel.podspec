@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ColourWheel'
   s.version          = '0.4.0'
-  s.summary          = 'A simple swift colour wheel based olour picker widget.'
+  s.summary          = 'A simple swift colour wheel based colour picker widget.'
   s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.

@@ -26,11 +26,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 #### nBits = 3
 
-![A Screenshot with 3 bits per component](./Extras/ColourWheel-3bits-screenshot.png "Example Screenshot with nBits = 3")
+![A Screenshot with 3 bits per component](https://github.com/jdstmporter/ColourWheel/blob/master/Extras/ColourWheel-3bits-screenshot.png)
 
 #### nBits = 8
 
-![A Screenshot](./Extras/ColourWheel-small-screenshot.png "Example Screenshot with nBits = 8")
+![A Screenshot](https://github.com/jdstmporter/ColourWheel/blob/master/Extras/ColourWheel-small-screenshot.png)
 
 ## Requirements
 
