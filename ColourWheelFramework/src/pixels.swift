@@ -102,6 +102,11 @@ public struct HSVPixel {
         return Polar(r: s,theta: CGFloat.pi*(2*h+0.5))
     }
     
+    public func quantised(_ quantiser: ColourQuantisation) -> HSVPixel {
+        let newHSV = quantiser.quantise([h,s,v])
+        return HSVPixel(newHSV[0], newHSV[1], newHSV[2])
+    }
+    
    
     
 }

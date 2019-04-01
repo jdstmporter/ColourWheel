@@ -45,11 +45,19 @@ public class ColorWheel : UIControl {
     private var height : Int!
     private var wheelSize : CGSize!
     
+    private var colours : ColourSource!
+    
+    public var nBits : UInt {
+        get { return colours?.nBits ?? 0 }
+        set { colours = ColourSource(bits: newValue) }
+    }
+    
     internal func initialise() {
         backgroundColor = .clear
         mid=bounds.mid
         touchPoint=mid
         cursor=Cursor(size: cursorSize, borderWidth: borderWidth)
+        colours=ColourSource()
     }
     
     public override init(frame: CGRect) {
@@ -75,7 +83,7 @@ public class ColorWheel : UIControl {
         
     private func colorAtPoint(_ point : CGPoint) -> [UInt8] {
         let dp=Polar(point-cen)/radius
-        return HSVPixel(polar: dp,brightness: brightness).bytes
+        return colours.colour(polar: dp,brightness: brightness).bytes
     }
     
     private func viewToImageSpace(_ point : CGPoint) -> CGPoint {

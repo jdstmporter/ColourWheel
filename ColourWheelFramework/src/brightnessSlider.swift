@@ -34,11 +34,20 @@ public class BrightnessSlider : UIControl {
     private var cursor : Cursor!
     private var touchPoint : CGPoint!
     
+    private var colours : ColourSource!
+    
+    public var nBits : UInt {
+        get { return colours?.nBits ?? 0 }
+        set { colours = ColourSource(bits: newValue) }
+    }
+    
+    
     internal func initialise() {
         backgroundColor = .clear
         width=Int(bounds.width)
         height=Int(bounds.height)
         cursor=Cursor(size: CGSize(boxed: bounds.size*0.5), borderWidth: 2)
+        nBits=8
     }
     
     public override init(frame: CGRect) {
@@ -69,7 +78,7 @@ public class BrightnessSlider : UIControl {
     
     private func colorAtPoint(_ x: Int) -> [UInt8] {
         let frac=brightnessAt(CGFloat(x))
-        return HSVPixel(baseColor.h, baseColor.s, frac).bytes
+        return colours.colour(baseColor.h, baseColor.s, frac).bytes 
     }
     
     public var currentColor : UIColor {

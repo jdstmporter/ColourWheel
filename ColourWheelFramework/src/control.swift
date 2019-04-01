@@ -91,5 +91,13 @@ public class ColourWheelControl : UIControl {
         }
     }
     
+    @IBInspectable public var nBits : UInt {
+        get { return colorWheel.nBits }
+        set {
+            colorWheel.nBits=newValue
+            brightnessSlider.nBits=newValue
+        }
+    }
+    
     
 }
