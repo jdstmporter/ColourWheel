@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import os
 
 
 
@@ -93,7 +93,9 @@ public class ColorWheel : UIControl {
     
     
     private func updateImage() {
+        
         if bounds.width==0 || bounds.height==0 { return }
+        os_signpost(.begin, log: .default, name: "Update Image", signpostID: .exclusive)
         radialImage=nil
         
         let dataLength = 3*width*height
@@ -111,6 +113,7 @@ public class ColorWheel : UIControl {
                                 space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: .byteOrderMask, provider: provider,
                                 decode: nil, shouldInterpolate: true, intent: .defaultIntent)
         }
+        os_signpost(.end, log: .default, name: "Update Image", signpostID: .exclusive)
         setNeedsDisplay()
     }
 

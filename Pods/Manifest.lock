@@ -1,5 +1,5 @@
 PODS:
-  - ColourWheel (0.4.0)
+  - ColourWheel (0.4.1)
 
 DEPENDENCIES:
   - ColourWheel (from `.`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  ColourWheel: 2c7ea189f7ca9e2bafd7acea84bf2090772411c5
+  ColourWheel: fca2efe0c9af71e62448ce8aa7dddf5446ca9cc5
 
-PODFILE CHECKSUM: edcdb552520fe85b322f4593a5897ba8c6e3eb9d
+PODFILE CHECKSUM: cd75ed7d75129ed01cb484a4fa26145fc2fc6c5e
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A swift colour picker widget for swift 4 in iOS 11.0 and later.  It is an extended fork
+A swift colour picker widget, witten in Swift 5, but backward compatible to Swift 4, for use on devices running iOS 11.0 and later.  It is an extended fork
 of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
                        DESC
 
@@ -30,7 +30,7 @@ of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.source = { :git => 'https://github.com/jdstmporter/ColourWheel.git', :tag => "#{s.version}" }
   s.source_files = 'ColourWheelFramework/src/*.{swift}'
