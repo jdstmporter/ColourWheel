@@ -29,10 +29,10 @@ public class ColorWheel : UIControl {
     private var cursor : Cursor!
     private var radialImage : CGImage?
     private var imageData : [UInt8] = []
-    private var radiusDidChange : Bool = false
+    private var needsNewWheel : Flag = AtomicFlag()
     private var radius : CGFloat = 0 {
         didSet {
-            radiusDidChange = radius != oldValue
+            if radius != oldValue { needsNewWheel.set() }
             cen=CGPoint(x: radius, y: radius)
             width=Int(2*radius)
             height=width
@@ -95,9 +95,8 @@ public class ColorWheel : UIControl {
     
     
     private func updateImage() {
+        if !needsNewWheel.testAndClear() { return }
         if bounds.width==0 || bounds.height==0 { return }
-        if !radiusDidChange { return }
-        radiusDidChange=false
         radialImage=nil
         
         let dataLength = 3*width*height
