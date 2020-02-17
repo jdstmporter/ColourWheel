@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Colour PickerVC-->
+        <scene sceneID="lgQ-9N-XmB">
+            <objects>
+                <viewController storyboardIdentifier="ColourPickerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6uF-3K-vsP" customClass="ColourPickerVC" customModule="Wheeltester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZF-SS-JMh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-ir-B17">
+                                <rect key="frame" x="340" y="64" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="Aac-b4-lQQ"/>
+                                    <constraint firstAttribute="height" constant="34" id="cCg-G7-0ZM"/>
+                                </constraints>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="cload:" destination="6uF-3K-vsP" eventType="touchUpInside" id="o9b-4E-vML"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-ci-o8A" customClass="ColourWheelControl" customModule="Wheeltester" customModuleProvider="target">
+                                <rect key="frame" x="39.5" y="280.5" width="335" height="335"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jUU-ci-o8A" secondAttribute="height" multiplier="1:1" id="CEj-Em-tzo"/>
+                                    <constraint firstAttribute="width" constant="335" id="rsq-Ls-CG4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nBits">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="colourChanged:" destination="6uF-3K-vsP" eventType="valueChanged" id="05Y-QF-i3z"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jUU-ci-o8A" firstAttribute="centerY" secondItem="oZF-SS-JMh" secondAttribute="centerY" id="0h8-23-lB2"/>
+                            <constraint firstItem="Gv6-Cb-Lza" firstAttribute="trailing" secondItem="I6U-ir-B17" secondAttribute="trailing" constant="20" id="BMY-yu-EPX"/>
+                            <constraint firstItem="I6U-ir-B17" firstAttribute="top" secondItem="Gv6-Cb-Lza" secondAttribute="top" constant="20" id="nzT-jf-c4x"/>
+                            <constraint firstItem="jUU-ci-o8A" firstAttribute="centerX" secondItem="oZF-SS-JMh" secondAttribute="centerX" id="q0O-vY-TXs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gv6-Cb-Lza"/>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="jUU-ci-o8A" id="AO8-06-9Hf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4R-F3-THv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="-88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

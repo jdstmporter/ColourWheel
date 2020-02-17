@@ -11,6 +11,12 @@
 		E10537E72252003E00FE1A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A143802251595D00CB2404 /* Main.storyboard */; };
 		E10537E92252013500FE1A01 /* colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10537E82252013500FE1A01 /* colours.swift */; };
 		E10537EB2252210D00FE1A01 /* ColourWheel-3bits-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E10537EA2252210D00FE1A01 /* ColourWheel-3bits-screenshot.png */; };
+		E11E7D8D23FADDEB00EF12BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11E7D8C23FADDEB00EF12BA /* Assets.xcassets */; };
+		E11E7D9723FADEAB00EF12BA /* UIViewController+HS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E7D9623FADEAB00EF12BA /* UIViewController+HS.swift */; };
+		E11E7D9C23FADED100EF12BA /* ColourPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E7D9823FADED100EF12BA /* ColourPickerVC.swift */; };
+		E11E7D9D23FADED100EF12BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E7D9923FADED100EF12BA /* ViewController.swift */; };
+		E11E7D9E23FADED100EF12BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E7D9A23FADED100EF12BA /* SceneDelegate.swift */; };
+		E11E7D9F23FADED100EF12BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E7D9B23FADED100EF12BA /* AppDelegate.swift */; };
 		E1A1435422514EBA00CB2404 /* ColourWheelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A1435222514EBA00CB2404 /* ColourWheelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1A1436722514F0B00CB2404 /* ColourWheel-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A1436522514F0B00CB2404 /* ColourWheel-screenshot.png */; };
 		E1A1436822514F0B00CB2404 /* ColourWheel-small-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A1436622514F0B00CB2404 /* ColourWheel-small-screenshot.png */; };
@@ -27,6 +33,16 @@
 		E1A143BA22515B4200CB2404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A143B822515B4200CB2404 /* LaunchScreen.storyboard */; };
 		E1A143C022515D0C00CB2404 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A143BF22515D0C00CB2404 /* Pods_example.framework */; };
 		E1A143C122515D0C00CB2404 /* Pods_example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1A143BF22515D0C00CB2404 /* Pods_example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1B6BAB623FAE07700E74308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB023FAE07600E74308 /* Main.storyboard */; };
+		E1B6BAB723FAE07700E74308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */; };
+		E1B6BAB823FAE07700E74308 /* ColourPickerVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */; };
+		E1B6BAB923FAE17600E74308 /* pixels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A143782251560100CB2404 /* pixels.swift */; };
+		E1B6BABA23FAE17600E74308 /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437422514FD100CB2404 /* geometry.swift */; };
+		E1B6BABB23FAE17600E74308 /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437222514FC900CB2404 /* cursor.swift */; };
+		E1B6BABC23FAE17600E74308 /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437022514FBC00CB2404 /* control.swift */; };
+		E1B6BABD23FAE17600E74308 /* colourWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1436E22514FAE00CB2404 /* colourWheel.swift */; };
+		E1B6BABE23FAE17600E74308 /* brightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1436B22514F7A00CB2404 /* brightnessSlider.swift */; };
+		E1B6BABF23FAE17600E74308 /* colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10537E82252013500FE1A01 /* colours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +72,14 @@
 		BD8FE6021439993B7E21FE53 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		E10537E82252013500FE1A01 /* colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colours.swift; sourceTree = "<group>"; };
 		E10537EA2252210D00FE1A01 /* ColourWheel-3bits-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColourWheel-3bits-screenshot.png"; sourceTree = "<group>"; };
+		E11E7D8123FADDD700EF12BA /* Wheeltester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheeltester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11E7D8C23FADDEB00EF12BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11E7D9123FADDEB00EF12BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11E7D9623FADEAB00EF12BA /* UIViewController+HS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+HS.swift"; sourceTree = "<group>"; };
+		E11E7D9823FADED100EF12BA /* ColourPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourPickerVC.swift; sourceTree = "<group>"; };
+		E11E7D9923FADED100EF12BA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E11E7D9A23FADED100EF12BA /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E11E7D9B23FADED100EF12BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A1435022514EBA00CB2404 /* ColourWheelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColourWheelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1435222514EBA00CB2404 /* ColourWheelFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColourWheelFramework.h; sourceTree = "<group>"; };
 		E1A1435322514EBA00CB2404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,11 +100,21 @@
 		E1A143B922515B4200CB2404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A143BB22515B4200CB2404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A143BF22515D0C00CB2404 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B6BAB123FAE07600E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		E1B6BAB323FAE07700E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		E1B6BAB523FAE07700E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/ColourPickerVC.storyboard"; sourceTree = "<group>"; };
 		E2845277ACC82D724019352D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFA94B4910F95D7B4E6D6686 /* Pods_ColourWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E11E7D7E23FADDD700EF12BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A1434D22514EBA00CB2404 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +155,7 @@
 				21DB4F90100E878DA6590D63 /* ColourWheel.podspec */,
 				E1A1435122514EBA00CB2404 /* ColourWheelFramework */,
 				E1A143AE22515B4100CB2404 /* example */,
+				E11E7D8223FADDD800EF12BA /* Wheeltester */,
 				607FACD11AFB9204008FA782 /* Products */,
 				955985172BA1A91553275238 /* Pods */,
 				0F6874114402D08190F30FBD /* Frameworks */,
@@ -132,6 +167,7 @@
 			children = (
 				E1A1435022514EBA00CB2404 /* ColourWheelFramework.framework */,
 				E1A143AD22515B4100CB2404 /* example.app */,
+				E11E7D8123FADDD700EF12BA /* Wheeltester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +183,31 @@
 				BD8FE6021439993B7E21FE53 /* Pods-example.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E11E7D8223FADDD800EF12BA /* Wheeltester */ = {
+			isa = PBXGroup;
+			children = (
+				E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */,
+				E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */,
+				E1B6BAB023FAE07600E74308 /* Main.storyboard */,
+				E11E7D9523FADE7700EF12BA /* src */,
+				E11E7D8C23FADDEB00EF12BA /* Assets.xcassets */,
+				E11E7D9123FADDEB00EF12BA /* Info.plist */,
+			);
+			path = Wheeltester;
+			sourceTree = "<group>";
+		};
+		E11E7D9523FADE7700EF12BA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E11E7D9B23FADED100EF12BA /* AppDelegate.swift */,
+				E11E7D9823FADED100EF12BA /* ColourPickerVC.swift */,
+				E11E7D9A23FADED100EF12BA /* SceneDelegate.swift */,
+				E11E7D9923FADED100EF12BA /* ViewController.swift */,
+				E11E7D9623FADEAB00EF12BA /* UIViewController+HS.swift */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		E1A1435122514EBA00CB2404 /* ColourWheelFramework */ = {
@@ -210,6 +271,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E11E7D8023FADDD700EF12BA /* Wheeltester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11E7D9423FADDEB00EF12BA /* Build configuration list for PBXNativeTarget "Wheeltester" */;
+			buildPhases = (
+				E11E7D7D23FADDD700EF12BA /* Sources */,
+				E11E7D7E23FADDD700EF12BA /* Frameworks */,
+				E11E7D7F23FADDD700EF12BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wheeltester;
+			productName = Wheeltester;
+			productReference = E11E7D8123FADDD700EF12BA /* Wheeltester.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E1A1434F22514EBA00CB2404 /* ColourWheelFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1A1435722514EBA00CB2404 /* Build configuration list for PBXNativeTarget "ColourWheelFramework" */;
@@ -254,10 +332,15 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					E11E7D8023FADDD700EF12BA = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = XLKATCU397;
+						ProvisioningStyle = Automatic;
+					};
 					E1A1434F22514EBA00CB2404 = {
 						CreatedOnToolsVersion = 10.2;
 						DevelopmentTeam = XLKATCU397;
@@ -286,11 +369,23 @@
 			targets = (
 				E1A1434F22514EBA00CB2404 /* ColourWheelFramework */,
 				E1A143AC22515B4100CB2404 /* example */,
+				E11E7D8023FADDD700EF12BA /* Wheeltester */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E11E7D7F23FADDD700EF12BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B6BAB723FAE07700E74308 /* LaunchScreen.storyboard in Resources */,
+				E11E7D8D23FADDEB00EF12BA /* Assets.xcassets in Resources */,
+				E1B6BAB623FAE07700E74308 /* Main.storyboard in Resources */,
+				E1B6BAB823FAE07700E74308 /* ColourPickerVC.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A1434E22514EBA00CB2404 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +457,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E11E7D7D23FADDD700EF12BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E7D9F23FADED100EF12BA /* AppDelegate.swift in Sources */,
+				E11E7D9D23FADED100EF12BA /* ViewController.swift in Sources */,
+				E1B6BABA23FAE17600E74308 /* geometry.swift in Sources */,
+				E11E7D9E23FADED100EF12BA /* SceneDelegate.swift in Sources */,
+				E11E7D9C23FADED100EF12BA /* ColourPickerVC.swift in Sources */,
+				E1B6BABB23FAE17600E74308 /* cursor.swift in Sources */,
+				E1B6BAB923FAE17600E74308 /* pixels.swift in Sources */,
+				E1B6BABD23FAE17600E74308 /* colourWheel.swift in Sources */,
+				E1B6BABC23FAE17600E74308 /* control.swift in Sources */,
+				E1B6BABE23FAE17600E74308 /* brightnessSlider.swift in Sources */,
+				E11E7D9723FADEAB00EF12BA /* UIViewController+HS.swift in Sources */,
+				E1B6BABF23FAE17600E74308 /* colours.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A1434C22514EBA00CB2404 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +508,30 @@
 				E1A143B922515B4200CB2404 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1B6BAB023FAE07600E74308 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B6BAB123FAE07600E74308 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B6BAB323FAE07700E74308 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B6BAB523FAE07700E74308 /* Base */,
+			);
+			name = ColourPickerVC.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -499,6 +637,58 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11E7D9223FADDEB00EF12BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XLKATCU397;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Wheeltester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.jpembedded.Wheeltester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11E7D9323FADDEB00EF12BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLKATCU397;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Wheeltester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.jpembedded.Wheeltester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -634,6 +824,15 @@
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11E7D9423FADDEB00EF12BA /* Build configuration list for PBXNativeTarget "Wheeltester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11E7D9223FADDEB00EF12BA /* Debug */,
+				E11E7D9323FADDEB00EF12BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
