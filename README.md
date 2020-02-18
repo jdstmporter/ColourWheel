@@ -51,7 +51,7 @@ jdstmporter, julian@porternet.org.uk.
 
 This is essentially an extended fork of the Objective-C control written  by [Justin Meiners](https://github.com/justinmeiners/ios-color-wheel).  New features include:
 
-* Port to Swift and modernisation for Swift 4.2 on iOS 11.0 and later
+* Port to Swift and modernisation for Swift 5 on iOS 12.0 and later
 * Addition of custom brightness picker slider, of similar style to the colour wheel, in place of the original `UISlider`
 * Quantisation capability
 * Improved 'cursor' objects to show the mouse location on the pickers
