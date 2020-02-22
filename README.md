@@ -57,8 +57,67 @@ This is essentially an extended fork of the Objective-C control written  by [Jus
 * Improved 'cursor' objects to show the mouse location on the pickers
 * `ColourWheelControl` provides the colour wheel, brightness slider and colour well as a single `@IBDesignable` control that can be dropped onto a view in Interface Builder and left to manage itself
 
-
+Also, many thanks to [ConfusedVorlon](https://github.com/ConfusedVorlon) for bringing to my attention conditions under which a control built its colour wheel multiple times, 
+causing performance degradation, and subsequent help diagnosing the problem and testing fixes.
+This contributed to the changes made in version 0.5.0.
 
 ## License
 
 ColourWheel is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
+
+
+## Version history
+
+<table>
+<tr>
+<td><b>0.5.1</b></td>
+<td>
+Extended documentation
+</td>
+</tr>
+<tr>
+<td><b>0.5.0</b></td>
+<td>
+Upgrade to baseline support for Swift 5, iOS 12<br/> 
+Added check to avoid redundant computation of wheel graphic
+</td>
+</tr>
+<tr>
+<td><b>0.4.1</b></td>
+<td>
+Updated documentation
+</td>
+</tr>
+<tr>
+<td><b>0.4.0</b></td>
+<td>
+Introduced capability to quantise colours on the wheel, 
+so making a restricted palette available
+</td>
+</tr>
+<tr>
+<td><b>0.3.0</b></td>
+<td>
+Improved pod packaging
+</td>
+</tr>
+<tr>
+<tr>
+<td><b>0.2.0</b></td>
+<td>
+Compatibility with Swift 5 and iOS 12
+</td>
+</tr>
+<tr>
+<td><b>0.1.0</b></td>
+<td>
+Initial version, with baseline support for Swift 4 and iOS 11
+</td>
+</tr>
+</table>
+
+
+
+
+
+
