@@ -12,12 +12,6 @@ Pod::Spec.new do |s|
   s.summary          = 'A simple swift colour wheel based colour picker widget.'
   s.swift_version    = '5'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 A swift colour picker widget for swift 5 in iOS 12.0 and later.  It is an extended fork
 of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
@@ -41,8 +35,6 @@ of the Objective-C library at https://github.com/justinmeiners/ios-color-wheel.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 
 
