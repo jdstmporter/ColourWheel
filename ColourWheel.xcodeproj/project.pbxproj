@@ -33,9 +33,6 @@
 		E1A143BA22515B4200CB2404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A143B822515B4200CB2404 /* LaunchScreen.storyboard */; };
 		E1A143C022515D0C00CB2404 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A143BF22515D0C00CB2404 /* Pods_example.framework */; };
 		E1A143C122515D0C00CB2404 /* Pods_example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1A143BF22515D0C00CB2404 /* Pods_example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1B6BAB623FAE07700E74308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB023FAE07600E74308 /* Main.storyboard */; };
-		E1B6BAB723FAE07700E74308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */; };
-		E1B6BAB823FAE07700E74308 /* ColourPickerVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */; };
 		E1B6BAB923FAE17600E74308 /* pixels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A143782251560100CB2404 /* pixels.swift */; };
 		E1B6BABA23FAE17600E74308 /* geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437422514FD100CB2404 /* geometry.swift */; };
 		E1B6BABB23FAE17600E74308 /* cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1437222514FC900CB2404 /* cursor.swift */; };
@@ -45,6 +42,10 @@
 		E1B6BABF23FAE17600E74308 /* colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10537E82252013500FE1A01 /* colours.swift */; };
 		E1B6BAC123FB19ED00E74308 /* atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6BAC023FB19ED00E74308 /* atomics.swift */; };
 		E1B6BAC223FB19ED00E74308 /* atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6BAC023FB19ED00E74308 /* atomics.swift */; };
+		E1D3B1FA24539577003D91EC /* atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6BAC023FB19ED00E74308 /* atomics.swift */; };
+		E1D3B20124539663003D91EC /* ColourPickerVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D3B1FB24539663003D91EC /* ColourPickerVC.storyboard */; };
+		E1D3B20224539663003D91EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D3B1FD24539663003D91EC /* LaunchScreen.storyboard */; };
+		E1D3B20324539663003D91EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D3B1FF24539663003D91EC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,10 +103,10 @@
 		E1A143B922515B4200CB2404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A143BB22515B4200CB2404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A143BF22515D0C00CB2404 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1B6BAB123FAE07600E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		E1B6BAB323FAE07700E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		E1B6BAB523FAE07700E74308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Wheel-2/MilkoJumps/Base.lproj/ColourPickerVC.storyboard"; sourceTree = "<group>"; };
 		E1B6BAC023FB19ED00E74308 /* atomics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atomics.swift; sourceTree = "<group>"; };
+		E1D3B1FC24539663003D91EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ColourPickerVC.storyboard; sourceTree = "<group>"; };
+		E1D3B1FE24539663003D91EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1D3B20024539663003D91EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2845277ACC82D724019352D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFA94B4910F95D7B4E6D6686 /* Pods_ColourWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -191,9 +192,9 @@
 		E11E7D8223FADDD800EF12BA /* Wheeltester */ = {
 			isa = PBXGroup;
 			children = (
-				E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */,
-				E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */,
-				E1B6BAB023FAE07600E74308 /* Main.storyboard */,
+				E1D3B1FB24539663003D91EC /* ColourPickerVC.storyboard */,
+				E1D3B1FD24539663003D91EC /* LaunchScreen.storyboard */,
+				E1D3B1FF24539663003D91EC /* Main.storyboard */,
 				E11E7D9523FADE7700EF12BA /* src */,
 				E11E7D8C23FADDEB00EF12BA /* Assets.xcassets */,
 				E11E7D9123FADDEB00EF12BA /* Info.plist */,
@@ -383,10 +384,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B6BAB723FAE07700E74308 /* LaunchScreen.storyboard in Resources */,
+				E1D3B20224539663003D91EC /* LaunchScreen.storyboard in Resources */,
 				E11E7D8D23FADDEB00EF12BA /* Assets.xcassets in Resources */,
-				E1B6BAB623FAE07700E74308 /* Main.storyboard in Resources */,
-				E1B6BAB823FAE07700E74308 /* ColourPickerVC.storyboard in Resources */,
+				E1D3B20124539663003D91EC /* ColourPickerVC.storyboard in Resources */,
+				E1D3B20324539663003D91EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,15 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ColourWheel/ColourWheel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ColourWheel.framework",
 			);
@@ -500,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D3B1FA24539577003D91EC /* atomics.swift in Sources */,
 				E1A143B222515B4100CB2404 /* ViewController.swift in Sources */,
 				E1A143B022515B4100CB2404 /* AppDelegate.swift in Sources */,
 			);
@@ -516,28 +514,28 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		E1B6BAB023FAE07600E74308 /* Main.storyboard */ = {
+		E1D3B1FB24539663003D91EC /* ColourPickerVC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E1B6BAB123FAE07600E74308 /* Base */,
+				E1D3B1FC24539663003D91EC /* Base */,
 			);
-			name = Main.storyboard;
+			name = ColourPickerVC.storyboard;
 			sourceTree = "<group>";
 		};
-		E1B6BAB223FAE07700E74308 /* LaunchScreen.storyboard */ = {
+		E1D3B1FD24539663003D91EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E1B6BAB323FAE07700E74308 /* Base */,
+				E1D3B1FE24539663003D91EC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		E1B6BAB423FAE07700E74308 /* ColourPickerVC.storyboard */ = {
+		E1D3B1FF24539663003D91EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E1B6BAB523FAE07700E74308 /* Base */,
+				E1D3B20024539663003D91EC /* Base */,
 			);
-			name = ColourPickerVC.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

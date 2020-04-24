@@ -38,7 +38,7 @@ public class Atomic<T> {
     
 }
 
-protocol Flag {
+public protocol Flag {
     
     var isSet : Bool { get }
     func set()

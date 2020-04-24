@@ -11,8 +11,10 @@ import UIKit
 @IBDesignable
 public class ColourWheelControl : UIControl {
     
+    @IBInspectable public var brightnessEnabled : Bool = true
+    
     private var colorWheel : ColorWheel!
-    private var brightnessSlider : BrightnessSlider!
+    private var brightnessSlider : BrightnessSlider?
     private var wellView : UIView!
     
     private var side : CGFloat { return bounds.size.min }
@@ -22,6 +24,7 @@ public class ColourWheelControl : UIControl {
         return CGRect(origin: origin,size: wheelSize)
     }
     private var sliderFrame : CGRect {
+        guard brightnessEnabled else { return CGRect() }
         let x=wheelFrame.minX+side*0.2
         
         return CGRect(x: x,y: 0.85*side,width: wheelFrame.maxX-x,height: 0.1*side)
@@ -39,12 +42,14 @@ public class ColourWheelControl : UIControl {
         colorWheel.continuous = true
         addSubview(colorWheel)
         
-        brightnessSlider=BrightnessSlider(frame: sliderFrame)
-        brightnessSlider.borderWidth=2
-        brightnessSlider.borderColor = .black
-        brightnessSlider.continuous=true
-        brightnessSlider.delegate  = { self.changeBrightness($0) }
-        addSubview(brightnessSlider)
+        if brightnessEnabled {
+            brightnessSlider=BrightnessSlider(frame: sliderFrame)
+            brightnessSlider?.borderWidth=2
+            brightnessSlider?.borderColor = .black
+            brightnessSlider?.continuous=true
+            brightnessSlider?.delegate  = { self.changeBrightness($0) }
+            addSubview(brightnessSlider!)
+        }
         
         wellView=UIView(frame: wellFrame)
         wellView.layer.borderColor = UIColor.black.cgColor
@@ -65,27 +70,32 @@ public class ColourWheelControl : UIControl {
     
     public override func layoutSubviews() {
         colorWheel.frame=wheelFrame
-        brightnessSlider.frame=sliderFrame
+        brightnessSlider?.frame=sliderFrame
         wellView.frame=wellFrame
         setNeedsDisplay()
     }
     
     func changeBrightness(_ slider: BrightnessSlider) {
-        wellView.backgroundColor=brightnessSlider.currentColor
+        guard brightnessEnabled else { return }
+        wellView.backgroundColor=brightnessSlider?.currentColor
         sendActions(for: .valueChanged)
     }
     
     func colorWheelDidChangeColor(_ colorWheel : ColorWheel) {
-        
-        brightnessSlider.setBaseColor(colorWheel.currentColor)
-        wellView.backgroundColor=brightnessSlider.currentColor
+        if brightnessEnabled {
+            brightnessSlider?.setBaseColor(colorWheel.currentColor)
+            wellView.backgroundColor=brightnessSlider?.currentColor
+        }
+        else {
+           wellView.backgroundColor=colorWheel.currentColor
+        }
         sendActions(for: .valueChanged)
     }
     
     @IBInspectable public var colour : UIColor {
-        get { return brightnessSlider.currentColor }
+        get { return brightnessSlider?.currentColor ?? colorWheel.currentColor }
         set {
-            brightnessSlider.setBaseColor(newValue)
+            brightnessSlider?.setBaseColor(newValue)
             colorWheel.currentColor=newValue
             setNeedsDisplay()
         }
@@ -95,7 +105,7 @@ public class ColourWheelControl : UIControl {
         get { return colorWheel.nBits }
         set {
             colorWheel.nBits=newValue
-            brightnessSlider.nBits=newValue
+            brightnessSlider?.nBits=newValue
         }
     }
     
