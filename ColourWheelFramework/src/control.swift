@@ -8,9 +8,39 @@
 
 import UIKit
 
+
+
+/**
+ 
+ ColourWheelControl defines a simple UIKit control that provides interactive colour-picker capability.
+ 
+    The class is @IBDesignable, so it works naturally with XCode's Interface Designer.  It inherits from `UIControl` and so exhibits all the usual configuration properties (e.g. background colour, border, `UIEvent`, etc) and functions, e.g. it manages its own layout.
+
+ Inspectable properties:
+    - brightnessEnabled
+    - nBits
+    - colour
+ 
+ Events:
+ 
+    The event  `UIEvent.valueChanged` is fired whenever the selected colour changes
+   
+ 
+   
+ 
+ */
 @IBDesignable
 public class ColourWheelControl : UIControl {
     
+    /**
+     Whether or nor the optional brigtness-chooser strip is visible / active in the control.
+     
+    Warning:
+     This parameter should be set once and for all when the control is instantiated; changing it dynamically may have unforseen side-effects.
+     
+    Default:
+     **true** (brightness control enabled)
+     */
     @IBInspectable public var brightnessEnabled : Bool = true
     
     private var colorWheel : ColorWheel!
@@ -58,6 +88,7 @@ public class ColourWheelControl : UIControl {
         
     }
     
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         initialise()
@@ -92,6 +123,15 @@ public class ColourWheelControl : UIControl {
         sendActions(for: .valueChanged)
     }
     
+    /**
+        The currently selected colour.  Writing to it resets the control to point at the specified colour.
+     
+     Events:
+     
+        The event  `UIEvent.valueChanged` is fired whenever the selected colour changes.
+     
+        Events are managed in the usual manner for UIControl instances, nd so the control can be wired up in Interface Builder like any other control.
+     */
     @IBInspectable public var colour : UIColor {
         get { return brightnessSlider?.currentColor ?? colorWheel.currentColor }
         set {
@@ -101,6 +141,14 @@ public class ColourWheelControl : UIControl {
         }
     }
     
+    /**
+     The number of bits used to represent colour components (so setting it to 3  would give 3 bits per colour component,
+     i.e. 8 levels for each of RGB or HSV).  This can be useful if you want to restrict the palette available to users.
+     
+     Default:
+       8 (standard 24 bit colour HSV).
+     
+     */
     @IBInspectable public var nBits : UInt {
         get { return colorWheel.nBits }
         set {

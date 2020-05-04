@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ColourWheel'
-  s.version          = '0.5.1'
+  s.version          = '0.6.0'
   s.summary          = 'A simple swift colour wheel based colour picker widget.'
   s.swift_version    = '5'
 

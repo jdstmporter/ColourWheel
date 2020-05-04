@@ -5,20 +5,41 @@
 [![License](https://img.shields.io/cocoapods/l/ColourWheel.svg?style=flat)](https://cocoapods.org/pods/ColourWheel)
 [![Platform](https://img.shields.io/cocoapods/p/ColourWheel.svg?style=flat)](https://cocoapods.org/pods/ColourWheel)
 
+`ColourWheelControl` defines a simple UIKit control that provides interactive colour-picker capability.  The class is `@IBDesignable`, so it works naturally with XCode's Interface Designer.  It inherits from `UIControl` and so exhibits all the usual configuration properties (e.g. background colour, border, `UIEvent`, etc) and functions, e.g. it manages its own layout.
+
 ## API
 
-ColourWheel defines a simple UIKit control that provides interactive colour-picker capability.  It is designable, so it works naturally with XCode's Interface Designer.  
-It is implemented as a single class: `ColourWheelControl`, which inherits from `UIControl` and so exhibits all the usual configuration properties (e.g. background colour, border, `UIEvent`, etc).
+### Initialisers
+Initialisers are inherited from `UIControl`
 
-Specific aspects of the API for `ColourWheelControl` that are of importance are as follows:
+### @IBInspectable properties
 
-*  Reading  `var colour : UIColor` gives the currently selected colour, writing to it resets the control to point at the specified colour; this property is exposed to Interface Builder
-*  The control fires the event  `UIEvent.valueChanged` whenever the selected colour changes; events are managed in the usual manner for `UIControl` instances
-*  `var nBits : UInt` defines number of bits used to represent colour components (so `nBits = 3` would give 3 bits per colour component, i.e. 8 levels for each of RGB or HSV).  This can be useful if you want to restrict the palette available to users.  It can be configured in Interface Builder.  The default is `nBits = 8` (standard 24 bit colour HSV). 
+-  `brightnessEnabled : Bool { get set }` 
+   
+   Whether or nor the optional brigtness-chooser strip is visible / active in the control.  When it is set to `false`, all colours have a default brightness of *1.0*.
+   
+   **Warning**: This parameter should be set once and for all when the control is instantiated; changing it dynamically may have unforseen side-effects.
+   
+   default = *true* (brightness selector enabled)
+   
+- `nBits : UInt { get set }`
+   
+   The number of bits used to represent colour components (so setting it to 3  would give 3 bits per colour 
+   component, i.e. 8 levels for each of RGB or HSV).  This can be useful if you want to restrict the palette 
+   available to users.
+   
+   default = 8 (standard 24 bit colour HSV)
+   
+- `colour : UIColor { get set }`
+   
+   The currently selected colour.  Writing to it resets the control to point at the specified colour.
+  
+### Events
 
-Everything else, including layout, is managed by the control.  
-
-
+The standard  `UIEvent.valueChanged` is fired whenever the selected colour changes.
+ 
+Events are managed in the usual manner for UIControl instances, nd so the control can be wired up in 
+Interface Builder like any other control.
 
 ## Example
 
@@ -69,6 +90,11 @@ ColourWheel is available under the MIT license. See the [LICENSE file](./LICENSE
 ## Version history
 
 <table>
+<tr>
+<td><b>0.6.0</b</td>
+<td>
+Made brightness selector control optional, selected by property setting
+</td>
 <tr>
 <td><b>0.5.1</b></td>
 <td>
